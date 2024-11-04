@@ -1,0 +1,4960 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowMovies</title>
+    <link rel="icon" type="image/x-icon" href="flomovies.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <script src="js/jquery.Rating.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script2.js"></script>
+    <style>
+#srchBar
+{
+  text-align:center; 
+}
+
+#srchInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-color: #C7CCCF;
+  width: 90%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  position: fixed;
+  width: 90%;
+  margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+  z-index: 1;
+}
+    </style>
+</head>
+<body>
+  <header>
+    <p id="srchBar">
+      <input type="text" id="srchInput" onkeyup="myFunction()" placeholder="Wyszukaj tytuł" title="Movie search" maxlength="30">
+    </p>
+  </header>
+  <main class="cards">
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Diuna</a></h3>
+        <p class="oRate">9.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Psycho Goreman</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Last Night in Soho</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Spencer</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Wszystkie Nasze Strachy</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Zmierzch</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Truflarze</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Ballada o Busterze Scuggsie</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Eternals</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Tick Tick Boom!</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+  
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Kurier Francuski z Liberty, Kansas Evening Sun</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Harry Potter i Kamien Filozoficzny</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Lekcje języka</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Harry Potter i Komnata Tajemnic</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Harry Potter i Więzień Azkabanu</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Nasz Magiczne Encanto</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Harry Potter i Czara Ognia</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">West Side Story</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Clifford</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">In The Heights</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">The Hand of God</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Spider-Man: Bez Drogi do Domu</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Harry Potter i Zakon Feniksa</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Powrót do Tamtych Dni</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Matrix: Zmartwychwstania</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Nie Patrz w Górę</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Matki Równolegle</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Harry Potter i Książę Półkrwi</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Licorice Pizza</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">CODA</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Harry Potter i Insygnia Śmierci cz.1</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Harry Potter i Insygnia Śmierci cz.2</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Harry Potter - 20 rocznica</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Benedette</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Spider-Man: Uniwersum</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">C'mon C'mon</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Tragedia Makbeta</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Piękny Umysł</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Wiwarium</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Najgorszy Człowiek na Świecie</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Zaułek Koszmarów</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Oczy Tammy Faye</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Śmierć na Nilu</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Niewinni Czarodzieje (14.02)</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Piosenki o Miłości</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section><section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Nitram</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section><section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Wyspa Psów</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Babel</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Przeżyć</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Belfast</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">X-Men</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">X-Men 2</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">X-Men Geneza: Wolverine</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Batman</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">X-Men: Ostatni Bastion</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">X-Men: Pierwsza Klasa</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">X-Men: Przeszłość, która nadejdzie</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Wolverine</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Cyrano</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="3.88" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Logan</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Red Rocket</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Deadpool</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Wszystko wszędzie naraz</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Belle</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="4.5" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Deadpool 2</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Fantastyczne Zwierzęta: Zbrodnie Grindewalda</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Apollo 10 1/2</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">A Ghost Story</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Duch Śniegów</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="2.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Fantastyczne Zwierzęta: Tajemnice Dumbledora</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">4</p>
+        <span class="stars" data-rating="2.5" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Rocketman</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Nick & Norah</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Film Balkonowy</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Paryż, 13 dzielnica</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Nieznośny ciężar wielkiego talentu</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Shang-Chi i legenda dziesięciu pierścieni</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Paddington</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Szalone życie Luisa Waina</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Biegnij!</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Uncharted</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Kolejne 365 dni</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Jojo Rabbit</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Strażnicy Galaktyki vol.2</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Doktor Strange w Multiwersum Obłędu</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Top Gun</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Paddington 2</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Boscy</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Księżniczka Kaguya</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Men</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.5" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Yang</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">You Won't Be Alone</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Supernova</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Top Gun: Maverick</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="3" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Dylemat</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Mała Mama</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Pan Wilk i Spółka. Bad Guys</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Bez Przebaczenia</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Szopy w Natarciu</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Once</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Jurassic World: Dominion</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="3" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Infinite Storm</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Buzz Astral</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Big Lebowski</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Turner i Hooch</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Zew Krwi</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Moulin Rouge</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Elvis</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Minionki: Wejście Gru</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="4" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Rodzinka Robinsonów</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Trzy Billboardy Za Ebbing, Missouri</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Zacznijmy Od Nowa</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">The Novelist's Film</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section><section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Niewiniątka</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section><section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Thor: Miłość i Grom</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Morska Bestia</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section><section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Czarny Telefon</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section><section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Watcher</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section><section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Powodzenia, Leo Grande</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="3.75" data-num-stars="5" ></span>
+    </section><section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Ojciec Panny Młodej</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Lilo i Stich</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Garfield</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Ennio</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Duży</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Niewiarygodne, ale prawdziwe</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Alcarras</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Podejrzana</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Enys Men</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Tori i Lokita</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Blisko</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Baby Broker</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Święty Duch</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Takie Lato</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">DC Liga Super-Pets</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Utama</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Wzgórze Ryczących Lwic</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh22.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Katedra</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Meduza</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="3.25" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Prey. Predator</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Poznaliśmy się w wirtualnej rzeczywistości</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Nawalny</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Bullet Train</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="4.13" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Nie!</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Dual</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Cud</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Gra</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">A oni dalej grzeszą dobry Boże!</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">3</p>
+        <span class="stars" data-rating="2.25" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Odlot</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Dziewczyny</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Cenzorka</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.25" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Bezdroża</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Wulkan Miłości</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="4" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Oldboy</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Pinokio 2022</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="#">Trzy Tysiące Lat Tęsknoty</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.5" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14114802/">Skrytka</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0362270/">Podwodne życie ze Stevem Zissou</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13640696/">Patrz Jak Kręcą</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0284837/">Ali G</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1655389/">Blondynka</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">4</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13327038/">Do Revenge</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="2.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15325794/">Fall</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="3.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt20426646/">Apokawixa</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="4.38" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14549466/">Zbrodnie Przyszłości</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt12637442/">Clara Sola</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt11738830/">The Beta Test</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.25" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10304142/">Amsterdam</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt12519030/">Pisklę</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="3.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9731598/">Bros</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.5" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt11540726/">Wskrzeszenie</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="3.88" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt2802144/">Kingsman: Tajne Służby</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="4.38" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt4649466/">Kingsman: Złoty Krąg</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15791034/">Barbarzyńcy</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.63" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1016150/">Na Zachodzie Bez Zmian</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="3.88" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt12691830/">Piosenka o Miłości</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.5" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15255876/">Na Złej Drodze</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.63" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt5181830/">Wendell i Wild</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.63" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14895716/">Coś w Spłachetku Ziemi</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="4" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Wieloryb</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="3.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Aftersun</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="4" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Armagedon</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.75" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Już Dobrze</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="2.63" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/marcel_shell2.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Marcel Muszelka w Różowych Bucikach</a></h3>
+        <p class="oRate">10</p>
+        <p class="kRate">9.5</p>
+        <span class="stars" data-rating="4.88" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Taurus</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="2.63" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Till</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.5" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Syn</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.25" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Do Ostatniej Kości</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="3.63" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Selena Gomez: Nic o mnie beze mnie</a></h3>
+        <p class="oRate">5</p>
+        <p class="kRate">4</p>
+        <span class="stars" data-rating="2.25" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Zaginione Miasto</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Athena</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="3.88" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Najpierw Strzelaj, Potem Zwiedzaj</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="4.25" data-num-stars="5" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Czarna Pantera: Wakanda w Moim Sercu</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Wypadek</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Menu</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Enola Holmes 2</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Dziwny Świat</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Strażnicy Galaktyki: Coraz Bliżej Święta</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Rodzice Chrzestni z Tokio</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Miasteczko Halloween</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Bałwanek</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">The Snowman and The Snowdog</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Śubuk</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Dzika Noc</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Transsiberian</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0338348/">Ekspres Polarny</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0993789/">Świąteczne Opowieści</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1430607/">Artur Ratuje Gwiazdkę</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0067411/">McCabe i Pani Miller</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt3460252/">Nienawistna Ósemka</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10999120/">Świąteczny Duch</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt6160448/">Biały Szum</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0039628/">Cud Na 34 Ulicy</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0314331/">To Właśnie Miłość</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1630029/">Avatar: Istota Wody</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0037059/">Spotkamy Się w St. Luis</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt11813216/">Duchy Inisherin</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0120324/">Prosty Plan</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0116282/">Fargo</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt2121382/">Turysta</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0276751/">Był Sobie Chłopiec</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0367594/">Charlie i Fabryka Czekolady</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9288692/">Wilkołaki są Wśród Nas</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/christmas.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0085334/">Prezent Pod Choinkę</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13270424/">Brian and Charles</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt6443346/">Black Adam</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">4</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14208870/">Fabelmenowie</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt3447590/">Matylda: Musical</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13223398/">Bestia</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">4</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt3915174/">Kot w Butach: Ostatnie Życzenie</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt7131622/">Pewnego Razu w Hollywood</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Stracone Złudzenia</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">W Gorsecie</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">RRR</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">M3gan</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">God's Country</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Bielmo</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Brazil</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Rzut Życia</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Gra Fortuny</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0093412/">Prawo Pożądania</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10368758/">Serce Dębu</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">W Trójkącie</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14596320/">Zawrót Głowy</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Babilon</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14444726/">Tár</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14741860/">Niebezpieczni Dżentelmeni</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt11813216/">Duchy Inisherin</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt22667880/">Chłopiec, kret, lis i koń</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt8093700/">Królowa Wojownik</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt17663790/">My Year of Dicks</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt7405458/">Mężczyzna imieniem Otto</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt20215392/">Le Pupille</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt17162620/">Haulout</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt8129806/">To Leslie</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10192406/">Most</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15062756/">Chleb i Sól</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15679400/">Pukając do drzwi</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt24464438/">Pokusa</a></h3>
+        <p class="oRate">1</p>
+        <p class="kRate">0.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt21847102/">Masz Ci los!</a></h3>
+        <p class="oRate">3</p>
+        <p class="kRate">3</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14109724/">Bilet do Raju</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">5.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0118694/">Spragnieni Miłości</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9356952/">Dick Long nie żyje</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14402146/">Imperium Światła</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1285016/">The Social Network</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0083658">Blade Runner</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt11210390/">Asteriks i Obeliks: Imperium Smoka</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10954600/">Ant-Man i Osa: Kwantomania</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15109082/">Cicha Dziewczyna</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt2911666/">John Wick</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt4425200/">John Wick 2</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14253846/">Goście</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10290244/">Szczęście Mikołajka</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9051908/">Living</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0095765/">Cinema Paradiso</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14209916/">Kokainowy Miś</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt6803046/">The Vast of Night</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14935966/">I Love My Dad</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13269580/">Na Pełny Etat</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10151854/">Shazam! Gniew Bogów</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10366206/">John Wick 4</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://kinozorza.pl/">Zorza</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1220719/">Ip Man</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1568346/">Dziewczyna z Tatuażem</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10365998/">Infinity Pool</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0108399/">Prawdziwy Romans</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10855768/">Missing</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt16419074/">Air</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt2906216/">Dungeons & Dragons: Złodziejski honor</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13328824/">Niewidomy człowiek, który nie chce obejrzeć „Titanica”</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt17076046/">Weird: The Al Yankovic Story</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt12261776/">65</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15257116/">Palmy i Słupy</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt2562232/">Birdman</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13521006/">Bo Się Boi</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt8206398/">Czarodziejski Flet</a></h3>
+        <p class="oRate">5</p>
+        <p class="kRate">4</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14781036/">Inside</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0118971/?">Adwokat Diabła</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt6791350/">Strażnicy Galaktyki: Volume 3</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0361748/">Bękarty Wojny</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0422720/">Maria Antonina</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0119488/">Tajemnice Los Angeles</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt12672536/">Trzej Muszkieterowie: D’Artagnan</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt6718170/">Super Mario Bros</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9172422/">Poznajmy Się Jeszcze Raz</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1182345/">Moon</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt5971474/">Mała Syrenka</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14534796/">Maskarada</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9362722/">Spider-Man: Poprzez Multiwersum</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14641542/">Osiem Gór</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10473036/">Zadziwiający kot Maurycy</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt6718170/">Super Mario Bros</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0082971/">Poszukiwacze zaginionej Arki</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14230388/">Asteroid City</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9455468/">Pamfir</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0087469/">Indiana Jones i Świątynia Zagłady</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt8105234/">Flamin' Hot: Smak sukcesu</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0097576/">Indiana Jones i ostatnia krucjata</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15671028/">Bez Urazy</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0117060/">Mission: Impossible</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0120755/">Mission: Impossible 2</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0317919/">Mission: Impossible III</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1462764/">Indiana Jones i artefakt przeznaczenia</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1229238/">Mission: Impossible - Ghost Protocol</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt2381249/">Mission: Impossible - Rogue Nation</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt4912910/">Mission: Impossible - Fallout</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt4873118/">Guy Ritchie's The Covenant</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt11956066/">Pod Ziemią (2020)</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9603212/">Mission: Impossible - Dead Reckoning Part One</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0120737/">Władca Pierścieni: Drużyna Pierścienia</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1517268/">Barbie</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt8174412/">Funny Pages</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt24068064/">Reality</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15398776/">Oppenheimer</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt27503384/">Perfect Days</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15547924/">Muzyka</a></h3>
+        <p class="oRate">5</p>
+        <p class="kRate">4</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt20114686/">Femme</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt26315142/">Tótem</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt22180518/">Disco Boy</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt21027780/">Opadające Liście</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt26448953/">Echo</a></h3>
+        <p class="oRate">6.5</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt18257464/">Polite Society</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt20205236/">Niedźwiedzie Nie Istnieją</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt12427158/">A Thousand and One</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt22890246/">How to Have Sex</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt23736044/">Monster</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14561712/">La Chimera</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13923216/">Showing Up</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt19760052/">Bulion i inne namiętności</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15289510/">Powoli</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt21113962/">20 000 gatunków pszczół</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14137416/">Porwany</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">6.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13238346/">Poprzednie życie</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10803634/">Tygrysica</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt27722061/">Kiedy czujesz, że czas na zrobienie czegoś minął</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt8649252/">Georgie ma się dobrze</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt12965010/">Eureka</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt16252698/">Przejścia</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt26448811/">Adamant</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13483866/">Linoleum</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt19500164/">Nimona</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15831022/">Przetrwanie</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/nh23_4.jpg" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt20867012/">Połówki</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate"></p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt20330434/">Moja zbrodnia</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt17277414/">Kochanica króla Jeanne du Barry</a></h3>
+        <p class="oRate">6.5</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt21991654/">Diabelska Jazda</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14472156/">Paint</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15153532/">Spuszczone ze smyczy</a></h3>
+        <p class="oRate">5.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9362930/">Blue Beetle</a></h3>
+        <p class="oRate">5</p>
+        <p class="kRate">4</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9873892/">Sklonowali Tyrone'a</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14668630/">Wielki zielony krokodyl domowy</a></h3>
+        <p class="oRate">5</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt4495098/">Gran Turismo</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt6906292/">Ultimatum</a></h3>
+        <p class="oRate">4.5</p>
+        <p class="kRate">3.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10638522/">Mów do mnie!</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt21276878/">Nie jesteś zaproszona na moją bat micwę</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt11618536/">Shithouse</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0167261/">Władca Pierścieni: Dwie Wieże</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0365830/">Tenacious D: Kostka Przeznaczenia</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0119094/">Bez Twarzy</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14773478/">Medusa Deluxe</a></h3>
+        <p class="oRate">6.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt28182736/">Szczenięca miłość</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15006566/">Bestie</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt12374656/">Emily</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt22687790/">Duchy w Wenecji</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1856101/">Blade Runner 2049</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0107616/">Wiele hałasu o nic</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt19719904/">Plan 75</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt27722543/">Zielona Granica</a></h3>
+        <p class="oRate">5</p>
+        <p class="kRate">5.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+   
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9484998/">Palm Springs</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt16968450/">Zdumiewająca historia Henry'ego Sugara</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14376344/">Taniec Młodości</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt8579674/">1917</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt9185206/">Jesteś tam, Boże? To ja, Margaret</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt28912758/">Łabędź</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt28912858/">Szczurołap</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt28912885/">Trucizna</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="">Zaplątani</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10651230/">Chłopi</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt25471950/">Flora i Syn</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10483152/">Wojny Jednorożców</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt5537002/">Czas krwawego księżyca</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14509110/">Nie ocali cię nikt</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13055264/">Dziwne ścieżki życia</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt6751668/">Parasite</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">9.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13365482/">Buła i ja</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt11534720/">Polne drogi mają smak soli</a></h3>
+        <p class="oRate">3</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt22041854/">Priscilla</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">6.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt5198890/">Eileen</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt27546190/">The Sweet East</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt24076146/">Opcja Perska</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10767052/">Pierwszy gol</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt21942866/">Dream Scenario</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt20102596/">LaRoy</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14849194/">Przesilenie Zimowe</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt21284442/">Lepiej później niż wcale</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt26594061/">Joan Baez. Jestem szumem</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt16300138/">Żarty się skończyły</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14813150/">Manodrom</a></h3>
+        <p class="oRate">5</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt19864828/">Pamięć</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10676048/">Marvels</a></h3>
+        <p class="oRate">5.5</p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt17676714/">Cypher</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt10545296/">Igrzyska Śmierci: Ballada ptaków i węży</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1259571/">Saga "Zmierzch": Księżyc w nowiu</a></h3>
+        <p class="oRate">4</p>
+        <p class="kRate">1</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/aff.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt16375956/">Przeciw wszystkim wrogom</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt11304740/">Życzenie</a></h3>
+        <p class="oRate">6.5</p>
+        <p class="kRate">6.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15654328/">Leo</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13287846/">Napoleon</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">6.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt27989255/">W nich cała nadzieja</a></h3>
+        <p class="oRate">6.5</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0071853/">Monty Python i Święty Graal</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt17527468/">Na dnie</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt23289160/">Godzilla Minus One</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt5535276/">Maestro</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt6166392/">Wonka</a></h3>
+        <p class="oRate">6.5</p>
+        <p class="kRate">6.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt12058584/">Królewska Gra</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15531718/">Wielki wóz</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0129167/">Stalowy Gigant</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13968674/">To może boleć</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13669038/">Woman Talking</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt12747748/">Zostaw świat za sobą</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt17351924/">Saltburn</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt17009710/">Anatomia Upadku</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt3758542/">Ferrari</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt20857676/">Akademia pana Kleksa</a></h3>
+        <p class="oRate">7.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15341416/">Kos</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0095327/">Grobowiec Świetlików</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15399970/">Matka siedzi z tyłu</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt8209702/">Sleep</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt16277242/">Śnieżne bractwo</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt6587046/">Chłopiec i Czapla</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt11426232/">Zatrzymać mordercę</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15314262/">Pszczelarz</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt26423839/">Ukryta Sieć</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt20561198/">Bękart</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14230458/">Biedne istoty</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0227538/">Mali Agenci</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13429870/">Pies i Robot</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt21192142/">Dobrzy nieznajomi</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15009428/">Argylle - Tajny szpieg</a></h3>
+        <p class="oRate">6.5</p>
+        <p class="kRate">6.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt28066777/">Orion i ciemność</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13651794/">Obsesja</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt7160372/">Strefa interesów</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt21413834/">Sekret nocy letniej</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13952306/">Katak. Podwodna przygoda</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt12818328/">Setki bobrów</a></h3>
+        <p class="oRate">8.5</p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt23561236/">American Fiction</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt21064584/">Bracia ze stali</a></h3>
+        <p class="oRate">6</p>
+        <p class="kRate">6.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0088939/">Kolor Purpury (1985)</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt19356262/">Żegnajcie laleczki</a></h3>
+        <p class="oRate">6.5</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt2543164/">Nowy Początek</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0298148/">Shrek 2</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">10</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15239678/">Diuna: Część druga</a></h3>
+        <p class="oRate">9</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1392214/">Labirynt</a></h3>
+        <p class="oRate">8</p>
+        <p class="kRate">9</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt26047818/">Tylko nie ty</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt21692408/">Kung Fu Panda 4</a></h3>
+        <p class="oRate">6.5</p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt11762114/">Mean Girls</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0272338/">Lewy sercowy</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt0092848/">Żywy cel</a></h3>
+        <p class="oRate">3</p>
+        <p class="kRate">2.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1060277/">Projekt: Monster</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt6689014/">Miłość bez ostrzeżenia</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14539740/">Godzilla i Kong: Nowe Imperium</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1318514/">Geneza Planety Małp</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt2103281/">Ewolucja Planety Małp</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt3450958/">Wojna o Planetę Małp</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt5672290/">Omen: Początek</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt14570440/">Radykalna metoda</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt3359350/">Road House</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt15471560/">Palenie powoduje kaszel</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1704573/">Bernie</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt17279496/">Civil War</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt13957560/">Inwestorzy amatorzy</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">6</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/kropka.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt16426418/">Challengers</a></h3>
+        <p class="oRate">7</p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1684562/">Kaskader</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">7.5</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    <section class="card">
+        <div class="icon">
+            <img src="img/icon.png" alt="icon">
+        </div>
+        <a class="id"></a>
+        <h3><a class="title" href="https://www.imdb.com/title/tt1104001/">TRON: Dziedzictwo</a></h3>
+        <p class="oRate"></p>
+        <p class="kRate">8</p>
+        <span class="stars" data-rating="0" data-num-stars="0" ></span>
+    </section>
+    
+    
+  </main>
+<script src="script1.js"></script>
+</body>
+
+</html>

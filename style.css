@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.oRate, .kRate {
+    display: none;
+}
+.oRate {
+ padding-top: 10px; 
+}
+.kRate {
+ padding-bottom: 15px; 
+}
+.oRate::before {
+ content: "Ola: "; 
+ font-weight: bold;
+}
+.kRate::before {
+ content: "Kamil: "; 
+ font-weight: bold;
+}
+.kRate::after, .oRate::after {
+ content: "/10"; 
+}
+
+body {
+    background: #4C4C4C;
+    height: 100vh;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #C7CCCF;
+
+    font-size: 16px;
+}
+
+#srchBar
+{
+  text-align:center; 
+}
+
+#srchInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-color: #4C4C4C;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.container {
+    background-color: transparent;
+    position: fixed;
+    top: 30vh;
+    left: 0;
+    z-index: 1;
+    /* padding: 10px; */
+}
+.selector {
+    background-color: #222;
+    position: relative;
+    left: -80%;
+    z-index: 1;
+    padding: 10px;
+    border-right: 30px solid black;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.selector:hover {
+    left: 0%;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 32px;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    flex-basis: calc(20% - 32px);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(99, 99, 99, 0.5);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    min-width: 15%;
+    margin: 16px;
+}
+
+/*
+.card:first-child {
+    margin-left: 0;
+}*/
+
+.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5%; 
+}
+
+.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+.card {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px -20px #542a8b;
+}
+
+/*.card:hover + .kRate {*/
+/*    display: block;*/
+/*}*/
+
+.card:hover {
+    box-shadow: 0px 0px 2px #A98FFF, 0px 0px 10px #5438DC;
+}
+
+.card:hover .kRate, .card:hover .oRate {
+  display: block;
+}
+.card:hover .icon {
+ display: none;
+}
+
+.card {
+    position: relative;
+}
+
+section.card .title[href]::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.break {
+  
+}
+
+a.title
+{
+    text-decoration: none;
+    color: #C7CCCF;
+}
+
+a.id {
+    position: relative;
+    display: block;
+    margin: -1em 0 .5em 0.3em;
+    border-radius: .3em;
+    transition: .3s ease-out;
+    color: #C7CCCF;
+}
+
+.cards
+{
+    counter-reset: counter;
+}
+
+a.id:hover { background: #E9E4E0; }
+.card:hover a.id:before { transform: rotate(360deg); }
+a.id:before {
+  counter-increment: counter;
+  content: counter(counter);
+  position: absolute;
+  left: -1.45em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #542a8b;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid #C7CCCF;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+}
+
+.stars
+{
+    margin-top: -1em;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .card {
+     min-width: 25%; 
+    }
+}
+@media screen and (max-width: 800px) {
+    main.cards {
+        flex-direction: column;
+        
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+
+}
+
+
+/*.card::after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: calc(var(--y, 0) * 1px - 15px);*/
+/*  left: calc(var(--x, 0) * 1px - 15px);*/
+/*  width: 30px;*/
+/*  height: 30px;*/
+/*  background: radial-gradient(white, #3984ff00 80%);*/
+
+/*  opacity: 0;*/
+/*  transition: opacity 0.2s;*/
+/*}*/
+
+/*.card:hover::after {*/
+/*  opacity: 0.4;*/
+/*}*/
+
